@@ -33,25 +33,17 @@
     width: min(100% - 32px, 960px);
     margin-inline: auto;
 }
-/*
-body {
-    font-family: "poppins", sans-serif;
-    background-color: var(--app-background-color);
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: var(--app-body-bg);
-    overflow-x: hidden;
-}*/
+
 html, body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: "poppins", sans-serif;
-    background-color: var(--app-background-color);
+    background-color: var(--app-footer-socials-color);
     font-weight: 400;
     letter-spacing: 0.5px;
-    color: var(--app-body-bg);
+    color: var(--app-white);
     overflow-x: hidden;
 }
 
@@ -86,7 +78,7 @@ a {
 header{
     position: relative;
     overflow: visible;
-    background-color: var(--app-blue);
+    background-color: transparent;
     align-items: center;
     z-index: 1;
 
@@ -165,7 +157,7 @@ header{
     }
 
     .dropdown-btn {
-        background-color: var(--app-blue);
+        background-color: transparent;
         color: var(--app-white);
         font-size: 25px;
         border: none;
@@ -186,7 +178,7 @@ header{
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: var(--app-blue);
+        background-color: var(--app-footer-socials-color);
         min-width: 160px;
         z-index: 2;
         border-radius: 5px;
@@ -332,52 +324,72 @@ label {
 
 .hero-banner{
     display: flex; 
-    background:var(--app-hero-banner-degraded);
-    height: 220px;
+    background-image: url('../img/banner2.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100svh;
 
     .col {
         width: 100%;
-        height: 220px;
-
+        height: 100%;
+        
+       
         .advert {
-            width: 600px;
+            width: 50%;
             height: 100%;
+            justify-content: center;
+            align-content: center;
+            text-align: right; 
+            color: var(--app-blue);
+            text-shadow: 0 0 1px #fff, 
+            0 0 2px #fff,
+            0 0 3px #fff,
+            0 0 4px #fff,
+            0 0 5px #fff;
+
+            h3 {
+                font-size: 25px;
+            }
         }
 
         .image {
-            width: calc(100% - 600px);
+            width: 50%;
             height: 100%;
-            justify-content: flex-end;
-            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
 
-.hero-banner .image img {
-    width: 100%;
-    min-width: 370px;
-    max-width: 370px;
-    height: auto;
-}
-
 .large-text {
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 600;
+    color: var(--app-blue);
     margin-top: 5px;
 }
 
 .sale-button {
-    display: block;
     margin-top: 20px; 
     margin-left: 0px;
     padding: 10px 20px; 
     font-size: 16px;
-    background-color: var(--app-detail-button-bg-color);
+    background-color: var(--app-footer-socials-color);
     color: var(--app-detail-button-font-color);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.2s ease, background-color 0.2s ease;
+    
 }
 
 .sale-button:hover, .product-details button:hover {
