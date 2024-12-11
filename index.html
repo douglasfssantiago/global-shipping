@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Douglas, Lateef, David, Fabian">
+        <meta name="description" content="Sky Telecom">
+        <meta name="keywords" content="HTML, CSS, JS, Web Development, json, git, GitHub">
+
+        <title>Sky Telecom</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>       
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dokdo&family=Knewave&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
+        <link rel="stylesheet" href="./assets/css/style.css" media="all">
+        <link rel="stylesheet" href="./assets/css/responsive.css" media="all">
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <script src="./assets/js/app.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex flex-between">
+                <div class="sky-logo">
+                    <a class="logo" href="#">SKY</a>
+                </div>
+                <div class="menu">
+                    <a href="#offers">Products</a>
+                    <a href="#contactus">Contact</a>
+                    <a href="#">Smart Home</a>
+                    <a href="#">Internet</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="flex">
+                    <nav class="flex">
+                        <ul class="flex">
+                            <li>
+                                <a class="icon" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li>
+                                <a class="icon" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li>
+                                <a class="login" href="#">Log in / Register</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#offers">Products</a>
+                            <a href="#contactus">Contact</a>
+                            <a href="#">Smart Home</a>
+                            <a href="#">Internet</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Log In</h2>
+                        <form id="loginForm">
+                            <label for="username">Username</label>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Enter your username" 
+                                required
+                            >
+                            <label for="password">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Enter your password" 
+                                required
+                            >
+                            <button type="submit" class="login-btn">
+                                Log In
+                            </button>
+                            <a href="#" class="create-account">
+                                Create an account
+                            </a>
+                            <a href="#" class="forgot-password">
+                                Forgot Username or Password?
+                            </a>
+                        </form>
+                    </div>
+                </div>                
+            </div>
+            <div class="hero-banner">
+                <div class = "container">
+                    <div class="col flex">
+                        <div class="advert">
+                            <p class="large-text">Black Friday Sale!</p>
+                            <h3>Get up to 60% off on selected smartphones</h3>
+                            <button class="sale-button">Buy now!</button>                             
+                        </div>
+                        <div class="image">
+                            <img src="./assets/img/hero-banner-img.png">
+                        </div>
+                    </div>                    
+                </div>
+            </div>              
+        </header>
+        <main>
+            <section class="container product-grid">
+                <div id="offers" class="product" data-id="1" data-name="Samsung Galaxy S24" data-price="450">
+                    <img src="./assets/img/1.png" alt="Samsung Galaxy S24">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p class="price">$450</p>
+                    <a class="login-btn" href="./detail.html">View Product</a>
+                </div>
+
+                <div class="product" data-id="3" data-name="iPhone 13" data-price="340">
+                    <img src="./assets/img/3.png" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <p class="price">$340</p>
+                    <button class="login-btn">View Product</button>
+                </div>       
+        
+                <div class="product" data-id="2" data-name="Samsung Galaxy S24" data-price="450">
+                    <img src="./assets/img/2.png" alt="Samsung Galaxy S24">
+                    <h3>Samsung Galaxy S24</h3>
+                    <p class="price">$450</p>
+                    <button class="login-btn">View Product</button>
+                </div>
+            </section>
+            
+            <!--Maps links-->
+            <section>
+                <div class="white-background-map" id="location">
+                    <div class="container-map">
+                        <div class="row-location location-text">
+                            <h2 id="title-map">Connect now</h2>
+                            <button class="button-tracker"><i class="fa-sharp fa-solid fa-location-dot"></i> Track</button>
+                        </div>
+                            <div id="map">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contactus" class="contact-us">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter your email">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter your subject">                        
+                        <label for="message">Message</label>
+                        <textarea rows="5" id="message" placeholder="Enter your Message"></textarea>
+                        <p class="output"></p>
+                        <button type="submit" class="login-btn send-message">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main> 
+        <footer>
+            <section class="container flex flex-between">
+                <div class="socials">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="copyright">&copy; Sky Telecoms, 2024. All rights reserved.</p>
+            </section>
+        </footer>     
+    </body>
+</htm>

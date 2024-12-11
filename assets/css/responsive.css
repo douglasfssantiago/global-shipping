@@ -1,0 +1,50 @@
+/*--------------------------------------*/
+/*             Media Query              */
+/*--------------------------------------*/
+@media screen and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    
+    .large-text {
+        font-size: 40px;
+    }    
+
+    .hero-banner{
+        .col {
+            .advert {
+                width: 400px;
+            }
+    
+            .image {
+                width: calc(100% - 400px);
+            }
+        }
+    }     
+}
+
+@media screen and (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .large-text {
+        font-size: 30px;
+    }
+
+    .hero-banner{
+        .col {
+            .advert {
+                width: 200px;
+
+                h3 {
+                    font-size: 14px;
+                }
+            }
+    
+            .image {
+                width: calc(100% - 200px);
+            }
+        }
+    }
+}
