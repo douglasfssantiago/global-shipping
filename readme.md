@@ -2,13 +2,15 @@
 
 This project was developed for Program Developer students, focusing on tools like Git and GitHub while working remotely. This web application was designed for a fictional delivery company called 'Global Shipping', and includes features such as a geolocalization (Geolocation and MapBox APIs), modal dialogs, and responsive design. Below are the details of the project's structure and functionality.
 
-![](./assets/img/readme-img-1.png)
+## 🔗Project Demo
+You can see the live demo of the project [here](https://douglasfssantiago.github.io/global-shipping/).
+
+![](./assets/img/readme2.png)
 
 ## 📑Table of Contents
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Folder Structure](#project-structure)
 - [Features](#features)
 
 ## 🖥️Technologies Used
@@ -20,35 +22,36 @@ This project was developed for Program Developer students, focusing on tools lik
 To run this project locally, follow these steps:
 1. Clone the repository:
     ```sh
-    git clone https://github.com/fabianmendozaospina/sky-telecom.git
+    git clone https://github.com/douglasfssantiago/global-shipping.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd sky-telecom
+    cd global-shipping
     ```
 3. Open `index.html` in your browser to view the application.
 
-## Usage
-The application includes various features for both users and administrators:
-- Browse the product catalog.
-- View detailed information about products.
-- Log in or register as a user.
-- Contact support through the contact form.
 
-## Project Structure
-The project is organized as follows:
-- `index.html`: Main HTML file containing the structure of the web application.
-- `style.css`: Stylesheet file for the application's layout and design.
-- `utils.js`: Utility JavaScript for functions, event listeners and functionality.
-- `main.js`: Main JavaScript file responsible for initializing and managing 
-core application interactions, leveraging utility functions from `utils.js`.
+## Folder Structure
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── img
+│   │   ├── favicon.png
+│   │   ├── hero-banner-img.png
+│   │   ├── banner.jpg
+│   │   └── download-app-img.png
+│   ├── js
+│   │   ├── app.js
+│   │   └── map.js
+├── index.html
+└── README.md
 
-![](./assets/img/readme-img-2.png)
+
+![](./assets/img/readme.png)
 
 ## 💡Features
 ### Header
 - Logo and navigation menu.
-- Search and cart icons.
 - Dropdown menu for additional links.
 
 ### Banner 
@@ -59,9 +62,8 @@ core application interactions, leveraging utility functions from `utils.js`.
 - Log in/Register modal for user authentication.
 - Form validation and submission.
 
-### Product Catalog
-- Display of product images, names, prices, and view product buttons.
-- Responsive grid layout for product display.
+### Services
+- Showcases the services provided by the company.
 
 ### Contact Us
 - Contact form for users to send messages.
