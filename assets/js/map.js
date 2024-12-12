@@ -31,8 +31,6 @@ function getLocation(position) {
         color: "#001f3d",
         draggable: false,        
     }).setLngLat([longitude, latitude]).addTo(map); 
-    
-    console.log('>>>>> Ubicación obtenida: ' + latitude + ', ' + longitude);            
 }
 
 function goToCurrentPosition() {
@@ -45,7 +43,6 @@ function goToCurrentPosition() {
     });        
         
     if ('geolocation' in navigator) {
-        console.log(">>>> 1");
         navigator.geolocation.getCurrentPosition(getLocation, errorHandler, accuracy);
     } else {
         console.log('Your browser does not support the Geolocation API.');
