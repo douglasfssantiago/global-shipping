@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
     cd global-shipping
     ```
 3. Open `index.html` in your browser to view the application.
-
+4. Accept permissions requested from the popup appearing.
 
 ## Folder Structure
 ![](./assets/img/readme-struct.png)
