@@ -331,6 +331,11 @@ label {
             justify-content: center;
             align-content: center;
             color: var(--app-white);
+            text-shadow: 0 0 1px var(--app-blue), 
+                     0 0 2px var(--app-blue),
+                     0 0 3px var(--app-blue),
+                     0 0 4px var(--app-blue);
+                     
            
 
             h3 {
@@ -480,6 +485,83 @@ label {
     margin-bottom: 10px;
 }
 
+/*------------------------------------------------------------*/
+/*                        Map                                 */
+/*------------------------------------------------------------*/
+
+.white-background {
+    background-color: var(--app-white);
+    padding: 60px 0;
+}
+
+.white-background-map {
+    background-color: var(--app-white);
+}
+
+.row-location {
+    text-align: center;  
+    width: 100%;
+    padding: 60px 0 60px 0;
+    background-color: var(--app-white);
+}
+
+.location-text h2 {
+    font-size: 35px;
+    color: var(--app-white);
+    font-weight: 600;
+    text-align: center;
+}
+
+.track-btn {
+    padding: 10px 15px; 
+    background-color: var(--app-background-color); 
+    color: var(--app-white);
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.traking {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.tracking{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    .track-input {
+        width: 300px;
+        
+        
+    }
+    
+}
+
+.track-input {
+    width: 300px;
+    
+}
+
+.container-map {
+    width: 100%;
+    margin-inline: auto;
+}
+
+#map {
+    width: 100%;
+    height: 550px;
+}
+
+#title-map {
+    color: var(--app-items-border-color);
+    height: 46px;
+}
+
 /*--------------------------------------*/
 /*                Footer                */
 /*--------------------------------------*/
@@ -565,99 +647,4 @@ footer {
         margin-top: 15px;
     }
 }
-/*------------------------------------------------------------*/
-/*                        Map                                 */
-/*------------------------------------------------------------*/
 
-.white-background {
-    background-color: var(--app-white);
-    padding: 60px 0;
-}
-
-.white-background-map {
-    background-color: var(--app-white);
-}
-
-.row-location {
-    text-align: center;  
-    width: 100%;
-    padding: 60px 0 60px 0;
-    background-color: var(--app-white);
-}
-
-.location-text h2 {
-    font-size: 35px;
-    color: var(--app-white);
-    font-weight: 600;
-    text-align: center;
-}
-
-/* .track-btn {
-    width: 100px;
-    height: 45px;
-    background-color: var(--app-blue);
-    border-radius: 6px;
-    font-style: 1.6rem;
-    color: aliceblue;
-    font-size: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 10px 0px 0px 10px;
-} */
-
-.track-btn {
-    padding: 10px 15px; 
-    background-color: var(--app-background-color); 
-    color: var(--app-white);
-    border: none; 
-    border-radius: 5px;
-    cursor: pointer; 
-}
-
-.traking {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 10px; 
-    margin-top: 20px; 
-}
-
-.tracking{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    .track-input {
-        width: 300px;
-        
-        
-    }
-    
-}
-
-.track-input {
-    width: 300px;
-    
-}
-
-.container-map {
-    width: 100%;
-    margin-inline: auto;
-}
-
-#map {
-    width: 100%;
-    height: 550px;
-}
-
-#title-map {
-    color: var(--app-items-border-color);
-    height: 46px;
-}
-
-
-
-.mapboxgl-ctrl-logo,
-.mapboxgl-ctrl-attrib-inner {
-    display: none !important;
-}
