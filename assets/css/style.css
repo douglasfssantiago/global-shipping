@@ -252,7 +252,7 @@ header{
     cursor: pointer;
 }
 
-.login-btn, .product-details button {
+.login-btn {
     display: block;
     margin: 20px auto; 
     padding: 10px 20px; 
@@ -265,12 +265,12 @@ header{
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.login-btn:hover, .product-details button:hover {
+.login-btn:hover, button:hover {
     background-color: var(--app-detail-button-hover-bg-color);
     transform: scale(1.05);
 }
 
-input[type="text"], input[type="password"] {
+input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -392,7 +392,7 @@ label {
     
 }
 
-.sale-button:hover, .product-details button:hover {
+.sale-button:hover {
     background-color: var(--app-detail-button-hover-bg-color);
     transform: scale(1.05);
 }
@@ -436,24 +436,6 @@ label {
     transform: scale(1.07);
 }
 
-.view-product {
-    background-color: var(--app-blue);
-    color: var(--app-white);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: auto;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0.5rem 1rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    opacity: 0.9;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-
-    
-}
-
 .service-description{
     color: var(--app-white);
     font-size: 17px;
@@ -464,7 +446,23 @@ label {
 /*--------------------------------------*/
 /*              Contact Us              */
 /*--------------------------------------*/
+.left {
+    width: 50%;
+}
 
+.right {
+    width: 50%;
+    
+    align-items: center;
+    align-content: center;
+
+
+    img{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+            }
+}
 .contact-us {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -592,8 +590,7 @@ footer {
 }
 
 .row-location {
-    display: block;
-    text-align: center;
+    text-align: center;  
     width: 100%;
     padding: 60px 0 60px 0;
     background-color: var(--app-white);
@@ -605,6 +602,8 @@ footer {
     font-weight: 600;
     text-align: center;
 }
+
+
 
 /*------------------------------------------------------------*/
 /*                        Map                                 */
@@ -619,7 +618,25 @@ footer {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 25px;
+    margin: 10px 0px 0px 10px;
+}
+
+.tracking{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    .track-input {
+        width: 300px;
+        
+        
+    }
+    
+}
+
+.track-input {
+    width: 300px;
+    
 }
 
 .container-map {
@@ -633,9 +650,11 @@ footer {
 }
 
 #title-map {
-    color: var(--app-dark-gray);
+    color: var(--app-items-border-color);
     height: 46px;
 }
+
+
 
 .mapboxgl-ctrl-logo,
 .mapboxgl-ctrl-attrib-inner {
