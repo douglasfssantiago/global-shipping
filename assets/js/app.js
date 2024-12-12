@@ -77,6 +77,10 @@ listen('click', sendMessage, (event) => {
 
     } else {
         output.style.color = '#04a730';
+        name.value = '';
+        email.value = '';
+        subject.value = '';
+        message.value = '';
         output.innerText = 'Your message was sent successfully!';
     }
 });
