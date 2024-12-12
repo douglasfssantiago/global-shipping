@@ -32,19 +32,7 @@ To run this project locally, follow these steps:
 
 
 ## Folder Structure
-├── assets
-│   ├── css
-│   │   └── style.css
-│   ├── img
-│   │   ├── favicon.png
-│   │   ├── hero-banner-img.png
-│   │   ├── banner.jpg
-│   │   └── download-app-img.png
-│   ├── js
-│   │   ├── app.js
-│   │   └── map.js
-├── index.html
-└── README.md
+![](./assets/img/readme-struct.png)
 
 
 ![](./assets/img/readme.png)
