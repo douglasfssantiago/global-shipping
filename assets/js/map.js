@@ -21,50 +21,6 @@ listen("click", trackBtn, () => {
     track();
 });
 
-// listen('change', mapSwitch, (e) => {
-//     toggleMap(e.target.checked);
-// })
-
-// function toggleMap(checked) {
-//     map = new mapboxgl.Map({
-//         container: mapContainer,
-//         style: checked ? 'mapbox://styles/mapbox/standard-satellite' : 'mapbox://styles/mapbox/standard',
-//         center: [-106.346771, 56.130366],
-//         pitch: 25,
-//         zoom: 4
-//     });  
-    
-//     viewLbl.innerText = checked ? 'Satellite View' : 'Standar View';
-// }
-
-// function setCenter(center) {
-//     map.easeTo({
-//         center: center,
-//         duration: 1000,
-//         pitch: 50,
-//         zoom: 16,
-//     });
-// }
-
-// function track() {
-//     function getLocation(position) {
-//         let { latitude, longitude } = position.coords;
-//         const currentPosition = [longitude, latitude];
-//         new mapboxgl.Marker({
-//             color: "#278295",
-//             draggable: false,
-//         }).setLngLat(currentPosition).addTo(map);
-
-//         setCenter(currentPosition);
-//     }
-
-//     if ('geolocation' in navigator) {
-//         navigator.geolocation.getCurrentPosition(getLocation, errorHandler, options);
-//     } else {
-//         console.log('Your browser does not support the Geolocation API.');
-//     }
-// }
-
 function getLocation(position) { 
     let { latitude, longitude } = position.coords;
     
