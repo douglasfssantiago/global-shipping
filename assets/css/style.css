@@ -345,9 +345,9 @@ label {
             color: var(--app-blue);
             text-shadow: 0 0 1px #fff, 
             0 0 2px #fff,
-            0 0 3px #fff,
-            0 0 4px #fff,
-            0 0 5px #fff;
+            0 0 3px #04ffff,
+            0 0 4px #04ffff,
+            0 0 5px #04ffff;
 
             h3 {
                 font-size: 25px;
@@ -409,26 +409,31 @@ label {
     align-items: center; 
     align-content: center; 
     padding: 30px 30px;
+
+    i{
+        font-size: 80px;
+    }
 }
 
 .product {
-    background-color: var(--app-gray);
+    background-color: transparent;
     padding: 1rem;
-    border: 1px solid var(--app-product-border);
-    border-radius: 5px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    h3 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
 }
-  
-.product img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    margin: 0 auto 1rem;
-    margin-top: 10px;
+
+.product:hover {
+    opacity: 1;
+    transform: scale(1.07);
 }
 
 .view-product {
@@ -445,149 +450,15 @@ label {
     margin-bottom: 10px;
     opacity: 0.9;
     transition: transform 0.2s ease, opacity 0.2s ease;
+
+    
 }
 
-.view-product:hover {
-    opacity: 1;
-    transform: scale(1.02);
-}
-
-.price {
-    color: var(--app-blue);
-    font-size: 18px;
-    font-weight: 700;
-}
-
-/*--------------------------------------*/
-/*            Product Section           */
-/*--------------------------------------*/
-
-section {
-    width: 100%;
-}
-
-section.notice {
-    background: linear-gradient(to right,	#1f2df7, #000046 );
-
-    p {
-        padding: 30px;
-        font-size: 16px;
-        font-weight: 400px;
-        color: var(--app-detail-button-font-color);
-    }
-}
-
-section.details {
-    background-color: var(--app-background-color);
-}
-
-.detail-content {
-    flex-wrap: wrap;
-    width: 100%;
-    color: var(--app-detail-font-color);
-    font-size: 12px;
-    font-weight: 400;
-    gap: 10px;
-}
-
-.detail-content .column{
-    flex: 0 0 auto;
-    padding: 20px;
-}
-
-.detail-content .column-1 {
-    width: calc(60% - 10px);
-}
-
-.detail-content .column-2 {
-    width: calc(40% - 10px);
-}
-
-.product-details {
-    gap: 20px;
-}
-.strike-through {
-    text-decoration: line-through;
-}
-
-.product-name {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.deal {
-    gap: 30px;
-
-    p.primary {
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--app-detail-primary-font-color);
-    }
-}
-
-.extra {
-    border-radius: 10px;
-    border: 1px solid var(--app-detail-primary-font-color);
-    padding: 8px;
-
-    p.primary {
-        font-size: 18px;
-        font-weight: 600;
-        color: var(--app-detail-primary-font-color);
-        text-transform: uppercase;
-    }
-}
-
-.storage {
-    display: flex;
-    gap: 10px;
-
-    li {
-        padding: 5px;
-        border: 1px solid var(--app-detail-button-font-color);
-        background-color: var(--app-detail-button-font-color);
-        border-radius: 4px;
-        cursor: default;
-    }
-}
-
-.storage::before {
-    content: 'Storage size:';
-    padding-top: 5px;
-}
-
-.color {
-    display: flex;
-    gap: 10px;
-
-    li {
-        margin-top: 5px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        padding: 5px;
-        border: 1px solid ;
-    }
-}
-
-.color::before {
-    content: 'Available colors:';
-    padding-top: 5px;
-}
-
-.black {
-    background-color: var(--app-items-border-color);
-    border: 1px solid var(--app-items-border-color);
-}
-
-.purple {
-    background-color: var(--app-purple);
-    border: 1px solid var(--app-purple);
-}
-
-.pink {
-    background-color: var(--app-light-pink);
-    border: 1px solid var(--app-light-pink);
+.service-description{
+    color: var(--app-white);
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
 }
 
 /*--------------------------------------*/
