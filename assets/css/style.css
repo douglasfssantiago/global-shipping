@@ -21,12 +21,8 @@
     --app-footer-bg-color: #655f5f;
     --app-footer-height: 70px;
     --app-footer-socials-color: #001f3d;
-    --app-purple: #800080;
-    --app-light-pink: #ffc0cb;
-    --app-red-output: #ff0000;
     --app-body-bg: #333333;
     --app-product-border: #f5f5f5;
-    --app-hero-banner-degraded: linear-gradient(to right,	#baf8f8, #001e42);
 }
 
 .container {
