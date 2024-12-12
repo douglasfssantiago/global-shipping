@@ -490,20 +490,17 @@ label {
 /*                        Map                                 */
 /*------------------------------------------------------------*/
 
-.white-background {
-    background-color: var(--app-white);
-    padding: 60px 0;
-}
 
-.white-background-map {
-    background-color: var(--app-white);
+.bg-map {
+    background-color: #f2f3f3;
+    padding-bottom: 80px;
 }
 
 .row-location {
     text-align: center;  
     width: 100%;
     padding: 60px 0 60px 0;
-    background-color: var(--app-white);
+    background-color: #f2f3f3;
 }
 
 .location-text h2 {
